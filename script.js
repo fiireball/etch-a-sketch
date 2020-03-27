@@ -35,9 +35,11 @@ function addGridListeners() {
             
             if (gridSquare.style.backgroundColor == "") {
                 gridSquare.style.backgroundColor = `rgb(${randomColor()}, ${randomColor()}, ${randomColor()})`
+                gridSquare.style.borderColor = gridSquare.style.backgroundColor
             } else {
                 let currentColor = gridSquare.style.backgroundColor
                 gridSquare.style.backgroundColor = makeDarker(currentColor)
+                gridSquare.style.borderColor = gridSquare.style.backgroundColor
             }
 
 
