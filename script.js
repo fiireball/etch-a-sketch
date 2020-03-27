@@ -23,8 +23,12 @@ function makeGrid(gridLength) {
 }
 
 
+function randomSaturation() {
+    return Math.floor(Math.random()*50+50)
+}
+
 function randomColor() {
-    return Math.floor(Math.random()*255)
+    return Math.floor(Math.random()*360)
 }
 
 
@@ -34,7 +38,7 @@ function addGridListeners() {
         gridSquare.addEventListener('mouseenter', () => {
             
             if (gridSquare.style.backgroundColor == "") {
-                gridSquare.style.backgroundColor = `rgb(${randomColor()}, ${randomColor()}, ${randomColor()})`
+                gridSquare.style.backgroundColor = `hsl(${randomColor()}, ${randomSaturation()}%, 50%)`
                 gridSquare.style.borderColor = gridSquare.style.backgroundColor
             } else {
                 let currentColor = gridSquare.style.backgroundColor
