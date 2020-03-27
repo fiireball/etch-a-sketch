@@ -3,6 +3,7 @@
     flex-direction: column;
     border: 1px solid lightgrey;
     border-radius: 5px;
+    box-shadow: 2px 2px 2px grey;
     margin: 0px auto;
     padding: 0em 2em 2em 2em;
     width: fit-content;
@@ -37,7 +38,8 @@ button {
 }
 
 button:hover {
-    box-shadow: 2px 2px grey;
+    box-shadow: 0 0 5px 2px grey;
+    border: 2px solid grey;
 }
 
 h1 {
