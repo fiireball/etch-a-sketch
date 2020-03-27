@@ -40,10 +40,7 @@ function addGridListeners() {
                 let currentColor = gridSquare.style.backgroundColor
                 gridSquare.style.backgroundColor = makeDarker(currentColor)
                 gridSquare.style.borderColor = gridSquare.style.backgroundColor
-            }
-
-
-            
+            } 
         })
     })
 }
@@ -55,7 +52,7 @@ function makeDarker(rgbString) {
 
     let rgbNumArray = [];
 
-    // Turn strings in array to numbers and reduce the values to 90%
+    // Turn strings of values in array to numbers and reduce the values to 90%
     for (let index = 0; index < rgbValues.length; index++) {
         rgbNumArray.push(Math.floor(parseInt(rgbValues[index])*0.9-2))
     }
@@ -92,3 +89,4 @@ resetButton.onclick = () => {
     makeGrid(currentLength)
 }
 
+makeGrid(10)

@@ -1,6 +1,12 @@
 .main-flex {
     display: flex;
     flex-direction: column;
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+    margin: 0px auto;
+    padding: 0em 2em 2em 2em;
+    width: fit-content;
+    background-image: linear-gradient(-90deg, lightgrey, grey);
 }
 
 .container-pad {
@@ -19,10 +25,23 @@
 
 .container-buttons {
     margin: 10px auto;
+    display: flex;
+    align-items: center;
 }
 
 button {
     padding: 10px;
     font-size: 1.2em;
-    margin-left: 10px;
+    margin-left: 20px;
+    border-radius: 5px;
+}
+
+button:hover {
+    box-shadow: 2px 2px grey;
+}
+
+h1 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: whitesmoke;
+    text-shadow: 1px 1px black;
 }
