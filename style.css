@@ -1,0 +1,28 @@
+.main-flex {
+    display: flex;
+    flex-direction: column;
+}
+
+.container-pad {
+    display: grid;
+    border: 1px solid grey;
+    height: 700px;
+    width: 700px;
+    margin: 0px auto;
+
+}
+
+.grid-square {
+    border: 1px solid lightgrey;
+    background-color: rgb(255, 255, 255);
+}
+
+.container-buttons {
+    margin: 10px auto;
+}
+
+button {
+    padding: 10px;
+    font-size: 1.2em;
+    margin-left: 10px;
+}
